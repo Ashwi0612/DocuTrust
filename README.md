@@ -74,3 +74,51 @@ DocuTrust/
 ```bash
 git clone https://github.com/YOUR_USERNAME/DocuTrust.git
 cd DocuTrust
+```
+
+### Backend Setup
+```bash
+cd backend
+pip install -r requirements.txt
+python main.py
+```
+
+### Frontend
+```bash
+frontend/index.html
+```
+in a browser.
+
+---
+## System Workflow
+
+1. User uploads a PDF document
+2. Backend extracts and preprocesses text
+3. AI model processes document content
+4. User submits a query via UI
+5. System returns context-aware response
+---
+
+## Future Enhancements
+
+1. Authentication and user management system
+2. Cloud deployment (AWS / Azure / Render)
+3. Multi-document conversational memory
+4. Document summarization module
+5. Analytics dashboard for uploaded files
+---
+
+## Project Purpose
+
+This project demonstrates practical implementation of:
+
+- Full-stack web development
+- AI integration with real-world applications
+- Document processing pipelines
+- REST API design and usage
+
+---
+## Author
+
+Ashwitha M
+---
