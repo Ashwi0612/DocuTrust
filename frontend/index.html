@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>DocuTrust</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LEFT PANEL -->
+    <div class="left">
+
+        <h2>📄 Upload PDF</h2>
+
+        <!-- FIX: properly wired file input -->
+        <input type="file" id="fileInput" onchange="handleFileSelect(event)" />
+
+        <button onclick="document.getElementById('fileInput').click()">
+            Choose File
+        </button>
+
+        <button onclick="uploadSelectedFile()">
+            Upload
+        </button>
+
+        <h3>🧠 Agent Logs</h3>
+        <div id="logs"></div>
+
+        <div id="status"></div>
+
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="right">
+
+        <h2>💬 Ask Question</h2>
+
+        <input type="text" id="question" placeholder="Ask something..."/>
+
+        <button onclick="askQuestion()">Ask</button>
+
+        <h3>🤖 Answer</h3>
+        <div id="answer"></div>
+
+        <h3>📌 Citations</h3>
+        <div id="citations"></div>
+
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
