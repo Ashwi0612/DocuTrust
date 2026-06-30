@@ -47,24 +47,27 @@ The system extracts text from documents, processes it using AI models, and retur
 ---
 
 ## Project Structure
+```
 DocuTrust/
 │
-├── backend/
-│ ├── main.py
-│ ├── utils.py
-│ ├── requirements.txt
+├── backend/                 # Backend API (FastAPI / Flask)
+│   ├── main.py              # Entry point
+│   ├── utils.py             # Helper functions
+│   ├── requirements.txt     # Dependencies
+│   └── config.py            # Configuration settings
 │
-├── frontend/
-│ ├── index.html
-│ ├── style.css
-│ ├── script.js
+├── frontend/                # UI layer
+│   ├── index.html           # Main interface
+│   ├── style.css            # Styling
+│   ├── script.js            # Frontend logic
 │
-├── uploads/
-├── .gitignore
-└── README.md
-
+├── uploads/                 # Uploaded PDFs storage
+├── static/                  # Static assets (optional)
+├── .gitignore               # Ignored files
+├── README.md                # Project documentation
+└── LICENSE                  # License file
 ---
-
+```
 ## Installation
 
 ### Clone repository
