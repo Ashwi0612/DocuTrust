@@ -1,124 +1,108 @@
 # DocuTrust — AI Document Intelligence System
 
 ![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![HTML5](https://img.shields.io/badge/HTML5-Frontend-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-Frontend-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![License](https://img.shields.io/badge/License-MIT-lightgrey?style=for-the-badge)
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Google_Gemini-AI-4285F4?style=for-the-badge&logo=google&logoColor=white)
 
 ---
 
 ## Overview
 
-DocuTrust is an AI-powered document intelligence system that allows users to upload PDF files and interact with their content using natural language queries.
-
-The system extracts text from documents, processes it using AI models, and returns context-aware responses to user questions in real time.
+DocuTrust is an AI-powered document intelligence system that enables users to upload PDF documents and interact with them using natural language. The application extracts document content, processes it using generative AI, and delivers context-aware answers through an intuitive web interface.
 
 ---
 
 ## Features
 
-- PDF document upload and processing
-- AI-based question answering over documents
-- Efficient text extraction and parsing
-- REST API-based backend architecture
-- Simple and responsive web interface
-- Real-time interaction with AI model
+- AI-powered question answering over PDF documents
+- Intelligent document text extraction
+- Natural language interaction
+- FastAPI REST backend
+- Responsive frontend built with HTML, CSS and JavaScript
+- Real-time communication between frontend and backend
 
 ---
 
 ## Tech Stack
 
-**Frontend**
-- HTML5
-- CSS3
-- JavaScript
-
-**Backend**
-- Python
-- FastAPI / Flask
-- REST APIs
-
-**AI Integration**
-- Google GenAI / OpenAI API
-- NLP-based document understanding
+| Category | Technologies |
+|----------|--------------|
+| Frontend | HTML5, CSS3, JavaScript |
+| Backend | Python, FastAPI |
+| AI | Google Gemini API |
+| Document Processing | PyMuPDF / PDF Processing Libraries |
+| Communication | REST APIs |
 
 ---
 
 ## Project Structure
-```
+
+```text
 DocuTrust/
 │
-├── backend/                 # Backend API (FastAPI / Flask)
-│   ├── main.py              # Entry point
-│   ├── utils.py             # Helper functions
-│   ├── requirements.txt     # Dependencies
-│   └── config.py            # Configuration settings
+├── backend/
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── uploads/
+│   └── ...
 │
-├── frontend/                # UI layer
-│   ├── index.html           # Main interface
-│   ├── style.css            # Styling
-│   ├── script.js            # Frontend logic
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
 │
-├── uploads/                 # Uploaded PDFs storage
-├── static/                  # Static assets (optional)
-├── .gitignore               # Ignored files
-├── README.md                # Project documentation
-└── LICENSE                  # License file
----
+├── .gitignore
+└── README.md
 ```
+
+---
+
 ## Installation
 
-### Clone repository
+### Clone the repository
+
 ```bash
-git clone https://github.com/YOUR_USERNAME/DocuTrust.git
+git clone https://github.com/<YOUR_USERNAME>/DocuTrust.git
 cd DocuTrust
 ```
 
 ### Backend Setup
+
 ```bash
 cd backend
 pip install -r requirements.txt
 python main.py
 ```
 
-### Frontend
-```bash
-frontend/index.html
-```
-in a browser.
+### Launch the Frontend
+
+Open `frontend/index.html` in your preferred web browser.
 
 ---
-## System Workflow
 
-1. User uploads a PDF document
-2. Backend extracts and preprocesses text
-3. AI model processes document content
-4. User submits a query via UI
-5. System returns context-aware response
+## Workflow
+
+1. Upload a PDF document.
+2. The backend extracts and processes the document text.
+3. The AI model indexes the extracted content.
+4. Submit questions through the web interface.
+5. Receive context-aware answers generated from the uploaded document.
+
 ---
 
 ## Future Enhancements
 
-1. Authentication and user management system
-2. Cloud deployment (AWS / Azure / Render)
-3. Multi-document conversational memory
-4. Document summarization module
-5. Analytics dashboard for uploaded files
----
-
-## Project Purpose
-
-This project demonstrates practical implementation of:
-
-- Full-stack web development
-- AI integration with real-world applications
-- Document processing pipelines
-- REST API design and usage
+- User authentication
+- Multi-document conversations
+- Document summarization
+- Cloud deployment
+- Citation support for AI responses
 
 ---
+
 ## Author
 
-Ashwitha M
----
+**Ashwitha M**
